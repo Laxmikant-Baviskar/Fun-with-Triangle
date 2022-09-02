@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');   */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');  */
+/* @import url('https://fonts.googleapis.com/css2?family=Lobster:wght@300&display=swap');  */
+
+
+
+:root{
+    --primary-color:black;
+    --dark-gray:#6B7280;
+    --light-gray:#F9FAFB;
+    --offwhite: #d7f3fa;
+    --light-blue:#EFF6FF;
+    --baby-pink: #11008f;
+    --purple: #A5B4FC;
+    /* --pink:#FB9E9F; */
+    /* --pink:#b97bff; */
+    /* --pink: linear-gradient(180deg, rgba(255, 2, 139, 0.37) 6.45%, #C8026D 76.41%); */
+    /* --pink: linear-gradient(211.7deg, rgba(174, 2, 255, 0.54) 7.87%, #7306A7 45.25%); */
+    /* --pink:linear-gradient(171.45deg, rgba(255, 0, 184, 0.54) -18.57%, #7306A7 68.11%); */
+    --pink:linear-gradient(357.29deg, #FF007A 1.91%, #FF0099 50.22%, #FF0037 124.33%);
+
+    /* --pink:#7bfff0; */
+    /* #EE6C8A */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Times New Roman';
+    background: var(--light-gray);
+    /* background: #EFF6FF; */
+}
+
+.navigation {
+    
+    color: var(--primary-color);
+    text-underline-offset: none;
+    padding: 1rem;
+    border-bottom-left-radius: 1rem;
+    margin: auto;
+    box-shadow: 0 1px 18px rgba(146,161,176,.15);
+    background: var(--pink);
+    color: white;
+    padding:0.5rem 2rem 0.5rem 2rem;
+    max-width: 1100px;
+    margin: auto;
+    padding: 1.5rem;
+    text-decoration: none;
+}
+
+.navigation .nav-brand {
+    font-weight: bold;
+}
+
+
+.row{
+    display: flex;
+    justify-content: center;
+}
+
+.row1{
+
+    display: flex;
+    justify-content: center;
+}
+
+
+.gif
+{
+    width: 250px;
+}
+.text
+{
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-top: 70px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+/* 
+ .column2{
+    margin:auto;
+    margin-right: 50%;
+    width: 70%;
+    size: 120%;
+}
+
+ .column1{
+    margin:auto;
+    margin-right:20%;
+    width: 70%;
+    size: 120%;
+} */
+
+#card-img-top{
+    width: 50px;
+    height: 30px;
+}
+
+.card{
+    /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    border-color: white;
+}
+
+
+
+#box{
+
+    /* width: 820px;
+    height:600px; */
+    width: 820px;
+    height:600px;
+    border-radius: 30px;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    
+}
+
+/* padding: 40px; */
+/* margin-top: 1rem; */
+/* border: 1px solid gray; */
+
+/* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+
+/* text-align: center; */
+
+/* for sample box  */
+.samplebox{
+
+    width: 820px;
+    height:500px;
+    border-radius: 30px;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;   
+}
+
+.card1box{
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    border: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; 
+    font-family: 'Times New Roman';
+    font-size: bold;
+
+}
+
+.card1
+{
+    display: flex;
+    justify-content: center;
+    padding-inline: 1rem;
+    margin-left: 30px;
+    /* margin: 100px; */
+}
+
+
+/* ====== footer ======= */
+/* 
+.footer-box{
+    width:inherit;
+    height: 200px;
+    border: black;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.footer-h1{
+    margin-top: 2px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+} */
+
+
+
+/* ======CSS for Footer======== */
+
+.footer-box{
+    /* width:inherit; */
+    width:100%;
+    /* height: 180px; */
+    height: 25vh;
+    border: rgb(0, 0, 0);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    text-align: center;
+}
+
+.footer-h1{
+    margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.social-icons{
+    /* width: 3%; */
+    width: 1.5rem;
+    padding-inline: 1.5rem;
+    
+}

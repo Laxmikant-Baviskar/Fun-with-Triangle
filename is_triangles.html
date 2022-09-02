@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Is Triangles</title>
+</head>
+
+<style>
+
+:root{
+    --primary-color:black;
+    --dark-gray:#6B7280;
+    --light-gray:#F9FAFB;
+    --offwhite: #d7f3fa;
+    --light-blue:#EFF6FF;
+    --baby-pink: #11008f;
+    --purple: #A5B4FC;
+    /* --pink:#FB9E9F; */
+    /* --pink:#b97bff; */
+    /* --pink: linear-gradient(180deg, rgba(255, 2, 139, 0.37) 6.45%, #C8026D 76.41%); */
+    /* --pink: linear-gradient(211.7deg, rgba(174, 2, 255, 0.54) 7.87%, #7306A7 45.25%); */
+    /* --pink:linear-gradient(171.45deg, rgba(255, 0, 184, 0.54) -18.57%, #7306A7 68.11%); */
+    --pink:linear-gradient(357.29deg, #FF007A 1.91%, #FF0099 50.22%, #FF0037 124.33%);
+
+
+    /* --pink:#7bfff0; */
+    /* #EE6C8A */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Times New Roman';
+    /* background: var(--light-gray); */
+    /* background: #EFF6FF; */
+    background: #fFFfFF;
+    font-weight: bold;
+    /* font-size: larger; */
+}
+
+/** navigation **/
+
+.navigation {
+    
+    color: var(--primary-color);
+    padding: 1rem;
+    border-bottom-left-radius: 1rem;
+    margin: auto;
+    box-shadow: 0 1px 18px rgba(146,161,176,.15);
+    background: var(--pink);
+    color: white;
+    padding:0.5rem 2rem 0.5rem 2rem;
+    max-width: 1100px;
+    margin: auto;
+    padding: 1.5rem;
+}
+
+.navigation .nav-brand {
+    font-weight: bold;
+}
+
+.coloumn{
+
+display: flex;
+justify-content: center;
+}
+
+.a1{
+    display: flex;
+    justify-content: center;
+}
+
+.column2{
+    margin:auto;
+    margin-right: 20%;
+    width: 70%;
+    size: 120%;
+}
+
+#box{
+
+width: 720px;
+height:620px;
+border-radius: 30px;
+border: 1%;
+/* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+
+.gif
+{
+    width: 250px;
+}
+.text
+{
+    align-items: center;
+    margin-top: 70px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+input{
+    padding: 1rem;
+    color: #4b5563;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    box-shadow: 0 1px 18px rgba(146,161,176,.15);
+    border-radius: 0.5rem;
+    height: 10px;
+    width:40%;
+    margin-left:1.5rem;
+}
+
+button{
+    
+    background: var(--pink) ;
+    border:none;
+    padding:1rem 4rem 1rem 4rem;
+    box-shadow: 0 1px 18px #EFF6FF;
+    border-radius: 0.25rem;
+    color: white;
+    font-size:1rem;
+    cursor: pointer;
+
+}
+
+/* ====== footer ======= */
+/* 
+.footer-box{
+    width:inherit;
+    height: 200px;
+    border: black;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.footer-h1{
+    margin-top: 2px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+} */
+
+
+/* ======CSS for Footer======== */
+
+.footer-box{
+    /* width:inherit; */
+    width:100%;
+    /* height: 180px; */
+    height: 25vh;
+    border: rgb(255, 8, 8);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    text-align: center;
+}
+
+.footer-h1{
+    margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.social-icons{
+    /* width: 3%; */
+    width: 1.5rem;
+    padding-inline: 1.5rem;
+}
+
+
+</style>
+
+
+
+
+
+
+
+<body>
+
+
+
+    <div>
+        <center>
+            <h1 class="navigation">Fun with Triangle</h1>
+            <br>
+
+            <div id="box">
+                
+                <div class="coloumn">
+                    <img src="triangle_animation.gif" alt="" class="gif">
+                    <h1 class="text">Check if the <br> angles make a <br> Triangle ?</h1>
+                </div>
+                
+                <br>
+                Angle 1 <input type="number" id="a1">
+                <br>
+                <br>
+                Angle 2 <input type="number" id="a2">
+                <br>
+                <br>
+                Angle 2 <input type="number" id="a3">
+                <br>
+                <br>
+                <button id="btn-submit">Submit</button>
+                <pre>
+
+                </pre>
+                <h1 id="display"></h1>
+            </div>
+
+
+        </center>
+    </div>
+    <pre> </pre>
+
+
+<!-- ======== footer ======== -->
+
+<footer>
+    <div class="footer-box">
+        <pre>
+        </pre>
+        <h2 class="footer-h1">Connect with me</h2> <br>
+        <a href="https://www.linkedin.com/in/laxmikant-baviskar-101219231"><img class="social-icons"
+                src="./linkedin (1).png" alt="linkedin" style=" margin-top: 1px;"></a>
+        <a href="https://github.com/Laxmikant-Baviskar"><img class="social-icons" src="./github.png" alt="github"
+                style=" margin-top: 1px;"></a>
+        <a href="mailto:laxmikantbaviskar1203@gmail.com"><img class="social-icons" src="./email.png" alt="email"
+                style=" margin-top: 1px;"></a>
+        <a href="https://twitter.com/LAXMIKANT_22KAR?t=Vq7BkTfuFx9lvcwI45oQPQ&s=09"><img class="social-icons" src="./twitter.png" alt="twitter" style=" margin-top: 1px; "></a>
+        <pre></pre>
+
+
+
+        
+
+
+        <!-- Copyright © 2022 Laxmikant Baviskar | <a href="">Portfolio</a> -->
+    </div>
+
+
+
+</footer>
+
+</center>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        const angle1 = document.querySelector("#a1");
+        const angle2 = document.querySelector("#a2");
+        const angle3 = document.querySelector("#a3");
+        const submit = document.querySelector("#btn-submit");
+        const display = document.querySelector("#display");
+
+        function total()
+        {
+            
+            let sum = Number(angle1.value) + Number(angle2.value) + Number(angle3.value);
+            
+            if (sum == 180) 
+            {
+                display.innerHTML = "Yayy! you form a Triangle 😎 "; 
+            } 
+            else 
+            {
+                display.innerHTML = "Oh O! Its not a Triangle "; 
+            }
+        }
+        // display.innerHTML = 
+        submit.addEventListener("click", total);
+
+
+    </script>
+</body>
+
+
+
+
+
+
+
+
+
+
+<!-- <center>
+
+    <footer>
+        <div class="footer-box">
+            <pre>
+            </pre>
+            <h2 class="footer-h1">Connect with me</h2><pre> </pre> 
+            <a href=""><img src="./insta-icon (1).png" alt="" style="width: 60px; margin-top: 1px; padding-inline: 1rem;"></a>
+            <a href=""><img src="./linkdein-icon (2).png" alt="" style="width: 60px; margin-top: 1px; padding-inline: 1rem;"></a>
+            <a href=""><img src="./insta-icon (1).png" alt="" style="width: 60px; margin-top: 1px; padding-inline: 1rem;"></a>
+            <a href=""><img src="./linkdein-icon (2).png" alt="" style="width: 60px; margin-top: 1px; padding-inline: 1rem;"></a>
+        <pre> </pre>
+            Copyright © 2022 Laxmikant Baviskar | <a href="">Portfolio</a>
+        </div>
+
+    </footer>
+</center>
+
+ -->
+</html>
